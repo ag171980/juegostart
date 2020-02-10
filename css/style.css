@@ -1,0 +1,214 @@
+.border-right{
+    border-right: 5px solid white;
+    padding-right: 20px;
+}
+.flex-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body{
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: none;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80vh;
+    margin-top:3vh; 
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 1vw;
+    
+    
+}
+.lista{
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    
+}
+.lista>.izquierda{
+    background: url("../images/izquierda.png") no-repeat left;
+
+    
+}
+#puntuaciones{
+    width: auto;
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+}
+ ul#puntuaciones li{
+     text-align: center;
+     line-height: 1.5em;
+    font-size: 11px;
+    
+    border-bottom:1px solid #aaa;
+    float:left;
+    display:block;
+    width: 50%;
+    padding: 10px 0;
+}
+#progress{
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: -200px;
+}
+.menu{
+    
+    text-align: center;
+}
+
+
+.rules{
+    position: absolute;
+    left: 95vw;
+    top: 90vh;
+}
+i{
+    font-size: 30px;
+    
+}
+
+.button-rainbow{
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 70%;
+    border: 2px solid black;
+    color: #fff;
+    cursor: pointer;
+    animation: rainbow 2s linear infinite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    outline: none;
+    
+}
+.puntaje{
+    color: white;
+    font-size: 15px;
+}
+
+/****************************************************/
+
+.intro {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    z-index: 1;
+    opacity: 0;
+  }
+  
+  .texto_intro {
+    font-family: "News Cycle", sans-serif;
+    color: #4bd5ee;
+    font-weight: 400;
+    letter-spacing: .1em;
+  }
+  
+  .historia {
+    position: absolute;
+    top: 90%;
+  }
+  
+  .párrafos {
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    z-index: 1;
+    transform-origin: 50%;
+    transform: perspective(300px) rotateX(20deg);
+  }
+  
+  .texto_historia {
+    font-family: "News Cycle", sans-serif;
+    font-weight: 700;
+    color: #ff6;
+    text-align: justify;
+    letter-spacing: .1em;
+    line-height: 1.1em;
+    width: 100%;
+    position: absolute;
+    left: 1vw;
+  }
+  .text{
+    position: relative;
+    right: 220px;
+  }
+  .botón {
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .animación_intro {
+    animation: intro 5s ease-out 0s;
+  }
+  
+  .animación_historia {
+    animation: parrafos 30s linear 5s;
+  }
+  .containerr{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .modal-dialog{
+    
+    background-color: black;
+    
+  }
+  @keyframes intro {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes parrafos {
+    0% {
+      top: 75%;
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      top: -70%;
+      opacity: 0;
+    }
+  }
+  
+  /*********/
+@keyframes rainbow{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
