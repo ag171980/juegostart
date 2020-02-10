@@ -113,7 +113,7 @@ i{
   
   .texto_intro {
     font-family: "News Cycle", sans-serif;
-    color: #4bd5ee;
+    color: #ff6;
     font-weight: 400;
     letter-spacing: .1em;
   }
@@ -156,13 +156,22 @@ i{
     border-radius: 5px;
     cursor: pointer;
   }
-  
-  .animación_intro {
-    animation: intro 5s ease-out 0s;
+  .banana{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
-  
+  .animación_intro {
+    animation: intro 8s ease-out 0s;
+  }
+  .texto_inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
   .animación_historia {
-    animation: parrafos 30s linear 5s;
+    animation: parrafos 30s linear 8s;
   }
   .containerr{
       display: flex;

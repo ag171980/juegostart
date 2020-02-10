@@ -66,15 +66,22 @@
 			<div id="texto">
 
 				<canvas id="canvas" width="800" height="400">Tu navegador no soporta canvas</canvas>
+				<div id="again"></div>
 			</div>
 			<div class="menu" id="btn">
 				<button class="btn btn-danger" style="font-size: 25px;width: 50%;"
 					onclick="move();document.getElementById('normal').play();">A Jugar!</button>
 			</div>
+			<div class="menu" >
+				<button class="btn btn-danger " id="btn2" style="font-size: 25px;width: 50%;display: none;"
+					onclick="window.location.reload();">Volver a jugar</button>
+			</div>
+			
 
 			<div class="rules">
 
-				<button type="button" class="button-rainbow" onclick="animar();document.getElementById('song').play();" data-toggle="modal" data-target="#exampleModal">
+				<button type="button" class="button-rainbow" onclick="animar();document.getElementById('song').play();"
+					data-toggle="modal" data-target="#exampleModal">
 					<i class="fas fa-info-circle"></i>
 				</button>
 
@@ -87,7 +94,15 @@
 							<!--------------------------------------------------------------------------------------------->
 
 							<section class="intro texto_intro">
-								Hace muchos megasegundos,<br> en un servidor muy,<br> muy remoto ...
+								<div class="texto_inicio">
+									<div class="sub_texto">
+										Hace muchos megasegundos,<br> en un servidor muy,<br> muy remoto ...
+									</div>
+									<div class="sub_texto">
+										<img src="images/bananas200x200.gif" alt="">
+									</div>
+								</div>
+								
 							</section>
 							<section class="párrafos">
 								<div class="historia texto_historia">
@@ -104,8 +119,11 @@
 
 									</div>
 									<div class="text" style="width: 800px;">
-										<p>Un grupo de pibes de start hicieron unos creditos como los de star wars</p>
-										<p>Al ver videos y con la ayuda de San Google pudieron lograr su cometido</p>
+										<p>Un grupo de chicos del curso start intentaron hacer un juego y unos creditos como los de star wars</p>
+										<p>Al ver videos y con la ayuda de San Google pudieron lograr su cometido...</p>
+									</div>
+									<div class="banana">
+										<img src="images/bananas200x200.gif" alt="">
 									</div>
 								</div>
 							</section>

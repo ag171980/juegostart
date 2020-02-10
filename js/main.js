@@ -3,6 +3,7 @@ var button = document.getElementById("btn");
 // ProgressBar.style.display = "none";
 var texto = document.getElementById("texto");
 
+var again = document.getElementById("again");
 
 var i = 0;
 var width = 0;
@@ -472,9 +473,11 @@ var game = (function () {
   }
 
   function showGameOver() {
+      document.getElementById("normal").pause();
       bufferctx.fillStyle="rgb(255,0,0)";
       bufferctx.font="bold 30px Arial";
       bufferctx.fillText("Perdiste", canvas.width / 2 -75, canvas.height / 2);
+      document.getElementById('btn2').style.display='initial';
   }
 
   function showCongratulations () {
@@ -484,8 +487,9 @@ var game = (function () {
       bufferctx.fillText("PUNTOS: " + player.score, canvas.width / 2 - 200, canvas.height / 2);
       bufferctx.fillText("VIDAS: " + player.life + " x 5", canvas.width / 2 - 200, canvas.height / 2 + 30);
       bufferctx.fillText("PUNTUACION TOTAL: " + getTotalScore(), canvas.width / 2 - 200, canvas.height / 2 + 60);
+      document.getElementById("boss").pause();
       document.getElementById("win").play();
-      document.getElementById("boss").stop();
+      document.getElementById('btn2').style.display='initial';
   }
 
   function getTotalScore() {
