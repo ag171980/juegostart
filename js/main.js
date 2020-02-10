@@ -708,6 +708,7 @@ window.addEventListener("resize", function() {
 });
 
 function animar() {
+    
   intro.className = 'intro texto_intro animación_intro';
   historia.className = 'historia texto_historia animación_historia';
 }

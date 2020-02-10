@@ -19,6 +19,7 @@
 	<audio src="sound/ripPlayer.wav" id="rPlayer"></audio>
 	<audio src="sound/risa_loca.wav" id="risa"></audio>
 	<audio src="sound/win.wav" id="win"></audio>
+	<audio src="sound/starwars.mp3" id="song"></audio>
 
 	<div class="body">
 
@@ -73,7 +74,7 @@
 
 			<div class="rules">
 
-				<button type="button" class="button-rainbow" onclick="animar()" data-toggle="modal" data-target="#exampleModal">
+				<button type="button" class="button-rainbow" onclick="animar();document.getElementById('song').play();" data-toggle="modal" data-target="#exampleModal">
 					<i class="fas fa-info-circle"></i>
 				</button>
 
